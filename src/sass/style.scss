@@ -1,5 +1,13 @@
+@import "./normalize.scss";
 @import "./variables.scss";
-
-body {
-  background-color: $green;
-}
+@import "./common.scss";
+@import "./blocks/app.scss";
+@import "./blocks/filters.scss";
+@import "./blocks/tickets-container.scss";
+@import "./blocks/flights-page.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/price-box.scss";
+@import "./blocks/ticket.scss";
+@import "./blocks/flight.scss";
+@import "./blocks/flight-info.scss";

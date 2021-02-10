@@ -1,0 +1,48 @@
+.ticket {
+  background-color: $blue-1;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    color: #fff;
+  }
+
+  &__img {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+  }
+
+  &__price-box {
+    margin: 0;
+    text-align: right;
+  }
+
+  &__price {
+    display: block;
+    font-size: 1.2em;
+  }
+
+  &__label {
+    font-size: 0.8em;
+  }
+
+  &__flight {
+    margin-bottom: 2px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $orange-1;
+    border: none;
+  }
+}

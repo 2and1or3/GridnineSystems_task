@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="flights-page">
+    <form class="flights-page__filters filters">
+      <fieldset class="filters__box">
+        <legend class="filters__box-title">Сортировать</legend>
+        <label class="filters__box-label radio" for="priceUp">
+          <input type="radio" name="sort" id="priceUp" />
+          - по возрастанию цены
+        </label>
+        <label class="filters__box-label radio" for="priceDown">
+          <input type="radio" name="sort" id="priceDown" />
+          - по убыванию цены
+        </label>
+        <label class="filters__box-label radio" for="trackTime">
+          <input type="radio" name="sort" id="trackTime" />
+          - по времени в пути
+        </label>
+      </fieldset>
+
+      <fieldset class="filters__box">
+        <legend class="filters__box-title">Фильтровать</legend>
+        <label class="filters__box-label checkbox" for="transfer-0">
+          <input type="checkbox" name="transfer-0" id="transfer-0" />
+          - без пересадок
+        </label>
+        <label class="filters__box-label checkbox" for="transfer-1">
+          <input type="checkbox" name="transfer-1" id="transfer-1" />
+          - 1 пересадка
+        </label>
+      </fieldset>
+
+      <fieldset class="filters__box">
+        <legend class="filters__box-title">Цена</legend>
+        <label class="filters__box-label price-box" for="min-price">
+          От
+          <input type="text" placeholder="0" name="min-price" id="min-price" />
+        </label>
+        <label class="filters__box-label price-box" for="max-price">
+          До
+          <input type="text" placeholder="100000" name="max-price" id="max-price" />
+        </label>
+      </fieldset>
+
+      <fieldset class="filters__box">
+        <legend class="filters__box-title">Авиакомпании</legend>
+        <label class="filters__box-label checkbox" for="company-1">
+          <input type="checkbox" name="company-1" id="company-1" />
+          - Название компании от 21049 р.
+        </label>
+        <label class="filters__box-label checkbox" for="company-2">
+          <input type="checkbox" name="company-2" id="company-2" />
+          - Название компании от 21049 р.
+        </label>
+      </fieldset>
+    </form>
+    <section class="tickets-container">
+      <div class="tickets-container__list">
+        <article class="ticket">
+          <header class="ticket__header">
+            <span class="ticket__img" />
+            <p class="ticket__price-box">
+              <span class="ticket__price">21049 ₽</span>
+              <span class="ticket__label">Стоимость для одного взрослого пассажира</span>
+            </p>
+          </header>
+          <div class="ticket__flight flight">
+            <p class="flight__destination">
+              <span class="flight__destination-from">
+                Москва, ШЕРЕМЕТЬЕВО
+                <span class="flight__destination-airport">(SVO)</span>
+              </span>
+              <span class="flight__destination-arrow" />
+              <span class="flight__destination-to">
+                ЛОНДОН, Лондон, Хитроу
+                <span class="flight__destination-airport">(LHR)</span>
+              </span>
+            </p>
+            <p class="flight__info flight-info">
+              <span class="flight__info-from">
+                <span class="flight-info__from-time">20:40</span>
+                <span class="flight-info__from-date">18 авг, вт</span>
+              </span>
+              <span class="flight-info__duration">
+                <span class="material-icons flight-info__duration-icon">
+                  schedule
+                </span>
+                14 ч 45 мин
+              </span>
+              <span class="flight__info-to">
+                <span class="flight-info__to-date">19 авг, ср</span>
+                <span class="flight-info__to-time">09:25</span>
+              </span>
+            </p>
+            <p class="flight__transfer">
+              <span class="flight__transfer-count">1 пересадка</span>
+            </p>
+            <span class="flight__company">
+              Рейс выполняет: LOT Polish Airlins
+            </span>
+          </div>
+          <div class="ticket__flight flight">
+            <p class="flight__destination">
+              <span class="flight__destination-from">
+                Москва, ШЕРЕМЕТЬЕВО
+                <span class="flight__destination-airport">(SVO)</span>
+              </span>
+              <span class="flight__destination-to">
+                ЛОНДОН, Лондон, Хитроу
+                <span class="flight__destination-airport">(LHR)</span>
+              </span>
+            </p>
+            <p class="flight__info flight-info">
+              <span class="flight__info-from">
+                <span class="flight-info__from-time">20:40</span>
+                <span class="flight-info__from-date">18 авг, вт</span>
+              </span>
+              <span class="flight-info__duration">
+                <span class="material-icons flight-info__duration-icon">
+                  schedule
+                </span>
+                14 ч 45 мин
+              </span>
+              <span class="flight__info-to">
+                <span class="flight-info__to-date">19 авг, ср</span>
+                <span class="flight-info__to-time">09:25</span>
+              </span>
+            </p>
+            <p class="flight__transfer">
+              <span class="flight__transfer-count">1 пересадка</span>
+            </p>
+            <span class="flight__company">
+              Рейс выполняет: LOT Polish Airlins
+            </span>
+          </div>
+          <button class="ticket__button" type="button">Выбрать</button>
+        </article>
+        <article class="ticket">
+          <header class="ticket__header">
+            <span class="ticket__img" />
+            <p class="ticket__price-box">
+              <span class="ticket__price">21049 ₽</span>
+              <span class="ticket__label">Стоимость для одного взрослого пассажира</span>
+            </p>
+          </header>
+          <div class="ticket__flight flight">
+            <p class="flight__destination">
+              <span class="flight__destination-from">
+                Москва, ШЕРЕМЕТЬЕВО
+                <span class="flight__destination-airport">(SVO)</span>
+              </span>
+              <span class="flight__destination-arrow" />
+              <span class="flight__destination-to">
+                ЛОНДОН, Лондон, Хитроу
+                <span class="flight__destination-airport">(LHR)</span>
+              </span>
+            </p>
+            <p class="flight__info flight-info">
+              <span class="flight__info-from">
+                <span class="flight-info__from-time">20:40</span>
+                <span class="flight-info__from-date">18 авг, вт</span>
+              </span>
+              <span class="flight-info__duration">
+                <span class="material-icons flight-info__duration-icon">
+                  schedule
+                </span>
+                14 ч 45 мин
+              </span>
+              <span class="flight__info-to">
+                <span class="flight-info__to-date">19 авг, ср</span>
+                <span class="flight-info__to-time">09:25</span>
+              </span>
+            </p>
+            <p class="flight__transfer">
+              <span class="flight__transfer-count">1 пересадка</span>
+            </p>
+            <span class="flight__company">
+              Рейс выполняет: LOT Polish Airlins
+            </span>
+          </div>
+          <div class="ticket__flight flight">
+            <p class="flight__destination">
+              <span class="flight__destination-from">
+                Москва, ШЕРЕМЕТЬЕВО
+                <span class="flight__destination-airport">(SVO)</span>
+              </span>
+              <span class="flight__destination-to">
+                ЛОНДОН, Лондон, Хитроу
+                <span class="flight__destination-airport">(LHR)</span>
+              </span>
+            </p>
+            <p class="flight__info flight-info">
+              <span class="flight__info-from">
+                <span class="flight-info__from-time">20:40</span>
+                <span class="flight-info__from-date">18 авг, вт</span>
+              </span>
+              <span class="flight-info__duration">
+                <span class="material-icons flight-info__duration-icon">
+                  schedule
+                </span>
+                14 ч 45 мин
+              </span>
+              <span class="flight__info-to">
+                <span class="flight-info__to-date">19 авг, ср</span>
+                <span class="flight-info__to-time">09:25</span>
+              </span>
+            </p>
+            <p class="flight__transfer">
+              <span class="flight__transfer-count">1 пересадка</span>
+            </p>
+            <span class="flight__company">
+              Рейс выполняет: LOT Polish Airlins
+            </span>
+          </div>
+          <button class="ticket__button" type="button">Выбрать</button>
+        </article>
+      </div>
+      <button class="tickets-container__button" type="button">Показать еще</button>
+    </section>
+  </div>
+</body>
+
+</html>

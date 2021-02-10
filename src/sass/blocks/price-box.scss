@@ -1,0 +1,10 @@
+.price-box {
+  display: flex;
+
+  input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 200px;
+    margin-left: 5px;
+  }
+}

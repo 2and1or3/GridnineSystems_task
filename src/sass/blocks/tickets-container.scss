@@ -1,0 +1,23 @@
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &__list > * {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    min-width: 200px;
+    padding: 5px 10px;
+    margin: 0 auto;
+  }
+}

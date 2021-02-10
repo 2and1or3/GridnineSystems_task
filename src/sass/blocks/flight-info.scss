@@ -1,0 +1,35 @@
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+
+  &__from-time,
+  &__to-time {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  &__from-time {
+    margin-right: 5px;
+  }
+
+  &__to-time {
+    margin-left: 5px;
+  }
+
+  &__from-date,
+  &__to-date {
+    font-size: 0.9em;
+    color: $blue-1;
+  }
+
+  &__duration {
+    display: flex;
+  }
+
+  &__duration-icon {
+    margin-right: 5px;
+    font-size: 20px;
+    line-height: 19px;
+    line-height: normal;
+  }
+}

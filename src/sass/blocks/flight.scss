@@ -1,0 +1,87 @@
+.flight {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &__destination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__destination-airport {
+    margin-left: 5px;
+    color: $blue-1;
+  }
+
+  &__destination-arrow {
+    position: relative;
+    flex-grow: 1;
+    min-width: 25px;
+    max-width: 250px;
+    height: 15px;
+    margin: 0 20px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      height: 1px;
+      content: "";
+      background-color: $blue-1;
+      transform: translate(0, -50%);
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      box-sizing: border-box;
+      width: 10px;
+      height: 10px;
+      content: "";
+      border-right: 1px solid $blue-1;
+      border-bottom: 1px solid $blue-1;
+      transform: translate(0, -50%) rotate(-45deg);
+    }
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__transfer {
+    position: relative;
+    min-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: $orange-2;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      left: 40px;
+      height: 1px;
+      content: "";
+      background-color: #ccc;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__transfer-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0 10px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+  }
+}
