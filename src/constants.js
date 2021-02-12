@@ -1,4 +1,4 @@
-export const MONTHS = [
+const MONTHS = [
   'янв',
   'фев',
   'мар',
@@ -13,7 +13,7 @@ export const MONTHS = [
   'дек',
 ];
 
-export const WEEK_DAYS = [
+const WEEK_DAYS = [
   'вс',
   'пн',
   'вт',
@@ -22,3 +22,26 @@ export const WEEK_DAYS = [
   'пт',
   'сб',
 ];
+
+const SortTypes = {
+  TO_UP: {
+    key: 'TO_UP',
+    label: 'по возрастанию цены',
+    sortFn: (flightA, flightB) => (
+      +flightA.flight.price.total.amount - +flightB.flight.price.total.amount),
+  },
+  TO_DOWN: {
+    key: 'TO_DOWN',
+    label: 'по убыванию цены',
+    sortFn: (flightA, flightB) => (
+      +flightB.flight.price.total.amount - +flightA.flight.price.total.amount),
+  },
+  TO_MAX_TIME: {
+    key: 'TO_MAX_TIME',
+    label: 'по времени в пути',
+    sortFn: (flightA, flightB) => (
+      +flightA.flight.legs[0].duration - +flightB.flight.legs[0].duration),
+  },
+};
+
+export { MONTHS, WEEK_DAYS, SortTypes };

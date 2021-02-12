@@ -15,8 +15,11 @@ function Flight({ leg }) {
   }
 
   const arrivalCity = segments[segments.length - 1].arrivalCity?.caption;
-  const { uid: arrivalAirportCode, caption: arrivalAirport } = segments[segments.length - 1]
-    .arrivalAirport;
+  const {
+    uid: arrivalAirportCode,
+    caption: arrivalAirport,
+  } = segments[segments.length - 1].arrivalAirport;
+
   const { arrivalDate } = segments[segments.length - 1];
 
   if (!arrivalCity) {
